@@ -17,3 +17,25 @@ universities = [
     "www.standford.edu", "www.google.com.ec", "www.elnoticiero.com.ec", "www.opensource.org",
     "www.facebook.com", "www.UCSG.edu.ec"
 ]
+
+siglas = []
+u_ecuador = []
+for uni in universities:
+    if 'edu' in uni:
+        lst_uni = uni.split(".")
+        index = lst_uni.index('edu')  # Devuelve un entero de donde esta el elemento.
+        university = str(lst_uni[index - 1]).upper()
+        if university not in siglas:
+            siglas.append(university)
+        if university not in u_ecuador and 'ec' in uni:
+            u_ecuador.append(university)
+
+# A
+print(f"Tenemos {len(siglas)} universidades: \n")
+for i in siglas:
+    print(f"\t{i}")
+
+# B
+print(f"Tenemos {len(u_ecuador)} universidades de ecuador: \n")
+for i in u_ecuador:
+    print(f"\t{i}")
