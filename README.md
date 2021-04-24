@@ -16,3 +16,4 @@ Sistema de control de versiones (trabajar en codigo versionamiento colaborativo)
 7.-) git add .
 8.-) git commit -m "<mensaje descriptivo para la confirmacion>"
 9.-) git push -u origin main
+10.-) git clone https://github.com/ronikode/CURSO-PYTHON.git
